@@ -1,0 +1,68 @@
+/** LIBS **/
+
+@use '../../scss/font';
+@use '@material/typography'as mtypo;
+@use '@material/theme'as mt;
+
+/** STYLES **/
+
+.FormAsis {
+    margin: 2rem;
+}
+
+.FormCard {
+    padding: 1rem 3rem;
+    text-align: left;
+
+    .title {
+        font-size: 18pt;
+        margin-top: 2rem;
+
+        &.main {
+            @include font.title;
+            text-align: center;
+            font-size: 20pt;
+
+            .iconXL {
+                word-spacing: 3rem;
+            }
+        }
+    }
+
+    .iconXL {
+        word-spacing: 1rem;
+        font-size: 24pt;
+    }
+
+    .sendButton {
+        padding: 1rem;
+        align-self: center;
+        flex-direction: row-reverse;
+
+        .sendIcon {
+            position: relative;
+            top: -3px;
+            left: 11px;
+            &::before {
+                content: '➤';
+                font-style: normal;
+                font-family: 'Open Sans';
+            }
+        }
+    }
+
+    .cardActions {
+        justify-content: flex-end;
+    }
+
+    .error {
+        color: mt.$error;
+        font-size: 12pt;
+        word-spacing: normal;
+    }
+
+    .textoRes {
+        margin: 1rem 0;
+        color: rgba(27, 27, 27, 0.333);
+    }
+}

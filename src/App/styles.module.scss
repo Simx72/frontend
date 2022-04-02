@@ -1,0 +1,41 @@
+/** LIBS **/
+
+@use "../scss/font";
+
+/** STYLES **/
+
+.App {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include font.text;
+    text-align: center;
+    background: #B993D6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8CA6DB, #B993D6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed, scroll;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    * {
+        box-sizing: inherit;
+    }
+    /* TITLE */
+    .title {
+        @include font.title;
+        color: white;
+        text-shadow: -1px 2px 4px rgba(0, 0, 0, .4);
+    }
+}
+
+body {
+    overflow: hidden;
+}

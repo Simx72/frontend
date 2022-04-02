@@ -1,0 +1,31 @@
+$font-family: 'Open Sans',
+'Lucida Sans',
+'Lucida Sans Regular',
+'Lucida Grande',
+'Lucida Sans Unicode',
+Geneva,
+Verdana,
+sans-serif;
+$font-family-title: 'Luckiest Guy',
+'Lucida Sans',
+'Lucida Sans Regular',
+'Lucida Grande',
+'Lucida Sans Unicode',
+Geneva,
+Verdana,
+sans-serif;
+%font-text {
+    font-family: $font-family;
+}
+
+%font-title {
+    font-family: $font-family-title;
+}
+
+@mixin text {
+    @extend %font-text;
+}
+
+@mixin title {
+    @extend %font-title;
+}

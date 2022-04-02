@@ -1,0 +1,18 @@
+.Header {
+    .title {
+        font-size: 36pt;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+        max-width: 600px;
+        margin: 1rem auto;
+        .titleLine {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-right: 1rem;
+        }
+    }
+}

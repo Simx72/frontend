@@ -1,0 +1,29 @@
+/** LIBS **/
+
+@use 'font'as f;
+@use "@material/theme"as mt with ($primary: #f069aa, $secondary: #69F0AE, );
+@use "@material/typography"as mtypo with ( $font-family: f.$font-family, $styles-headline1: (font-family: f.$font-family-title), $styles-headline2: (font-family: f.$font-family-title), $styles-headline3: (font-family: f.$font-family-title), $styles-body1: (font-size: 18pt));
+@use "@material/ripple"as mr;
+@use "@material/card"as mc;
+@use "@material/button"as mb;
+@use "@material/radio"as mradio;
+@use "@material/form-field"as mff;
+@use "@material/textfield"as mtf;
+@use "@material/floating-label"as mfl;
+@use "@material/notched-outline"as mno;
+@use "@material/line-ripple"as mlr;
+@use "@material/dialog"as md;
+
+/** STYLES **/
+
+@include mt.core-styles;
+@include mr.core-styles;
+@include mc.core-styles;
+@include mb.core-styles;
+@include mradio.core-styles;
+@include mff.core-styles;
+@include mtf.core-styles;
+@include mfl.core-styles;
+@include mno.core-styles;
+@include mlr.core-styles;
+@include md.core-styles;
